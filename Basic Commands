@@ -1,0 +1,4 @@
+Clear host    #to clear screen
+$host   #to check powershell version 
+get-help a*   #list commands/functions starts with "a"
+get-service | where {$_.status -eq "running"} | select-object -last 10    #"|" is use to query the collection ; "$_" is collection variable.
