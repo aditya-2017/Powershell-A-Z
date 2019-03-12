@@ -3,3 +3,9 @@ Command line shell
 .NET framework
 Acess to COM and WMI(Windows Management Instrumentation:related to deviece on network)
 Both local and Remote
+
+1. BASIC COMMANDS:
+	clear host
+	get-service | where {$_.Status -eq "running"} | select-object -last 10		// "|" use to query the collection ; "$_" collection variable
+	
+	
